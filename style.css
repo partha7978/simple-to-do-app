@@ -15,13 +15,14 @@ html {
 .container {
   width: 100%;
   height: 100%;
+  background-color: #e0e0e0;
 }
 
 /* header section starts */
 .header {
   width: 100%;
   height: auto;
-  background-color: rgb(233, 233, 233);
+  background-color: rgb(179, 179, 179);
   display: flex;
 }
 
@@ -68,3 +69,22 @@ html {
     letter-spacing: 3px;
 }
 /* heading ends */
+
+/* Main content starts */
+.main-content-div {
+    height: 75%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-content {
+    height: 85%;
+    width: 80%;
+    border-radius: 24px;
+    background: #e0e0e0;
+    box-shadow:  18px 18px 36px #bebebe,
+                 -18px -18px 36px #ffffff;
+}
+
+/* main content ends */
