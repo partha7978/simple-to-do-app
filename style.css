@@ -13,6 +13,26 @@ html {
   scroll-behavior: smooth;
 }
 .container {
-    height: 100%;
+  
     width: 100%;
+    height: 100%;
 }
+
+
+/* header section starts */
+.header {
+    width: 100%;
+    height: auto;
+    background-color: gray;
+    display: flex;
+
+}
+
+.header-text {
+    font-size: 1.4rem;
+    font-weight: 900;
+    margin: 0.5rem 0.5rem 0.5rem 1rem;
+    letter-spacing: 0.6rem;
+    cursor: pointer;
+}
+/* headert section ends */
