@@ -35,4 +35,13 @@ html {
     letter-spacing: 0.6rem;
     cursor: pointer;
 }
+
+.dark-mode-button {
+    height: 2rem;
+    width: 2rem;
+    margin: 0.5rem 1rem;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
 /* headert section ends */
