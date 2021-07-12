@@ -23,7 +23,7 @@ html {
 .header {
     width: 100%;
     height: auto;
-    background-color: gray;
+    background-color: rgb(233, 233, 233);
     display: flex;
 
 }
@@ -43,5 +43,11 @@ html {
     border-radius: 50%;
     border: none;
     outline: none;
+    box-shadow: 2px 4px 1rem rgba(105, 145, 255,1);
+    margin-left: auto;
+}
+
+.dark-mode-icon {
+    font-size:1rem;
 }
 /* headert section ends */
