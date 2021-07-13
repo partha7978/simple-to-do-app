@@ -106,5 +106,12 @@ html {
   border: 1px solid black;
 }
 
-
+.inputTime {
+  margin: 0.5rem;
+  padding: 0.30rem;
+  width:7rem;
+  border-radius: 20px;
+  outline: none;
+  border: 1px solid black;
+}
 /* main content ends */
