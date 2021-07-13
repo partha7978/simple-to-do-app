@@ -87,4 +87,24 @@ html {
                  -18px -18px 36px #ffffff;
 }
 
+
+.input-div {
+  width: 100%;
+  height:20%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items:center;
+}
+
+.input {
+  margin: 0.5rem;
+  padding: 0.35rem;
+  width:20rem;
+  border-radius: 20px;
+  outline: none;
+  border: 1px solid black;
+}
+
+
 /* main content ends */
