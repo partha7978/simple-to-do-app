@@ -171,6 +171,11 @@ html {
   overflow-y: scroll;
   max-height: 80%;
 }
+
+li {
+  
+  list-style: numeric;
+}
 /* to do list section ends */
 
 
