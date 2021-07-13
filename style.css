@@ -118,23 +118,17 @@ html {
 .inputAddButton {
   margin: 0.5rem;
   padding: 0.35rem;
-  width: 7rem;
+  width: 5rem;
   border-radius: 20px;
   outline: none;
   border: 1px solid black;
-  background-image: linear-gradient(to right, #4cc4a6 0%, #c5ffb7  51%, #4cc4a6 100%);
 
-  transition: 0.5s;
-  background-size: 200% auto;
   color: rgb(0, 0, 0);            
-  box-shadow: 0 0 20px #eee;
+  box-shadow: 0 0 5px rgb(130, 130, 130);
   display: block;
   font-weight: 540;
 }
 .inputAddButton:hover {
- 
-  background-position: right center;
-  
   color: rgb(0, 0, 0);
   text-decoration: none;
 }
