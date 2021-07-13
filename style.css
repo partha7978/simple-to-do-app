@@ -114,4 +114,14 @@ html {
   outline: none;
   border: 1px solid black;
 }
+
+.inputAddButton {
+  margin: 0.5rem;
+  padding: 0.35rem;
+  width: 5rem;
+  border-radius: 20px;
+  outline: none;
+  border: 1px solid black;
+}
+
 /* main content ends */
