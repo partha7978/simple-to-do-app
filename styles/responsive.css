@@ -39,4 +39,19 @@
     li {
         flex-wrap: wrap;
     }
+    .middle {
+        width:100%;
+        justify-content: center;
+        
+    }
+    .left {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        margin-left:0;
+    }
+    .fa-check, .fa-times {
+        text-align: center;
+        margin-left:1rem;
+    }
 }
