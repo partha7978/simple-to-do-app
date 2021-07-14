@@ -223,6 +223,20 @@ li:hover {
   color: red;
 }
 
+.right{
+  margin-right: auto;
+  display: flex;
+  align-items:center;
+}
+.middle{
+  display: flex;
+  align-items:center;
+}
+.left {
+  margin-left:auto;
+  display: flex;
+  align-items:center;
+}
 /* adding list section ends */
 
 /* to do list section ends */
