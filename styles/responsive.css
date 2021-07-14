@@ -17,8 +17,11 @@
         height: 90%;
         width: 94%;
     }
-    .input, .inputTime, .inputAddButton {
+    .inputTime, .inputAddButton {
         margin: 0.3rem;
+    }
+    .input {
+        margin: 0.3rem 0.7rem;
     }
     ul{
         width: 90%;
@@ -39,10 +42,13 @@
     li {
         flex-wrap: wrap;
     }
-    .middle {
+    .right {
         width:100%;
         justify-content: center;
-        
+    }
+    .middle {
+        width:100%;
+        justify-content: center;    
     }
     .left {
         width: 100%;
