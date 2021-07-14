@@ -193,9 +193,12 @@ li {
                -18px -18px 36px #ffffff;
   border-radius: 10px;
   display: flex;
-
+  cursor: pointer;
 }
-
+li:hover {
+  box-shadow:  18px 18px 36px #aaaaaa,
+  -18px -18px 36px #ffffff;
+}
 .list-number, .time-list {
   margin: 1rem 2rem;
   margin-right: auto;
