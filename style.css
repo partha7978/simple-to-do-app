@@ -183,6 +183,7 @@ ul {
 }
 li {
   width: 90%;
+  /* max-width: 90%; */
   height: auto;
   list-style: none;
   margin: 0.8rem;
@@ -192,15 +193,26 @@ li {
                -18px -18px 36px #ffffff;
   border-radius: 10px;
   display: flex;
-}
-.list-number-div {
-  /* margin-right: auto; */
-}
-.list-number {
-  margin: 1rem;
-  margin-right: auto;
+
 }
 
+.list-number, .time-list {
+  margin: 1rem 2rem;
+  margin-right: auto;
+  font-weight:600;
+}
+.main-list-content {
+  margin: 1rem;
+}
+
+.fa-check, .fa-times {
+  margin: 1rem 2rem;
+  margin-left: auto;
+  cursor: pointer;
+} 
+.fa-check:hover {
+  color: rgb(52, 223, 52);
+}
 
 
 /* adding list section ends */
