@@ -195,6 +195,7 @@ li {
                -18px -18px 36px #ffffff;
   border-radius: 10px;
   display: flex;
+
   cursor: pointer;
 }
 li:hover {

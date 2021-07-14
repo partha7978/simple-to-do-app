@@ -11,3 +11,22 @@
         height: auto;
     }
 }
+
+@media only screen and (max-width: 560px) {
+    .main-content {
+        height: 95%;
+    }
+    .input, .inputTime, .inputAddButton {
+        margin: 0.3rem;
+    }
+    ul{
+        width: 90%;
+        margin: 0.4rem;
+    }
+    li {
+        margin: 1rem 0.2rem;
+    }
+    .list-number, .time-list {
+        margin:1rem 0.3rem;
+    }
+}
