@@ -20,7 +20,7 @@ html {
 /* SCROLL BAR STARTS */
 /* width */
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 10px;
   
 }
 
@@ -172,10 +172,17 @@ html {
   max-height: 80%;
 }
 
+/* adding list section starts */
 li {
-  
   list-style: numeric;
+  margin: 1rem;
 }
+
+
+
+
+/* adding list section ends */
+
 /* to do list section ends */
 
 
