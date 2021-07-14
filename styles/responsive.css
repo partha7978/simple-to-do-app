@@ -1,0 +1,13 @@
+@media only screen and (max-width: 720px) {
+    .main-content-div {
+        height: 80%;
+        width: auto;
+    }
+    .main-conten {
+        /* min-height: 95%; */
+        height: 100%;
+    }
+    .input-div {
+        height: auto;
+    }
+}
