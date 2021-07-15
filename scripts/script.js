@@ -50,6 +50,9 @@ addButton.addEventListener("click", function() {
 
     ul.appendChild(li);
 
+    
 
+
+    middleText.appendChild(document.createTextNode(textInput.value));
 
 })
