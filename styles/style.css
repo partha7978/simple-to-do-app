@@ -189,7 +189,7 @@ ul {
 }
 li {
   width: 90%;
-  /* max-width: 90%; */
+  max-width: 90%;
   height: auto;
   list-style: none;
   margin: 0.8rem;
@@ -201,7 +201,6 @@ li {
   display: flex;
   transition: all 0.5s;
   cursor: pointer;
-
   background-color: #f8f9d2;
   background-image: linear-gradient(315deg, #f8f9d2 0%, #e8dbfc 74%);
 }
@@ -239,6 +238,7 @@ li:hover {
 .middle{
   display: flex;
   align-items:center;
+  flex-wrap: wrap;
 }
 .left {
   margin-left:auto;
