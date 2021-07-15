@@ -4,3 +4,8 @@ let textInput = document.querySelector(".input");
 let time = document.querySelector(".inputTime");
 let finish = document.querySelector(".fa-check");
 let notFinish = document.querySelector(".fa-times");
+
+
+addButton.addEventListener("click", function() {
+    console.log("click");
+})
