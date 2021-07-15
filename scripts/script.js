@@ -34,6 +34,22 @@ addButton.addEventListener("click", function() {
     wrongIcon.classList.add("fas", "fa-times");
 
 
+    
+
+    rightDiv.appendChild(serialNo);
+    rightDiv.appendChild(time);
+
+    middleDiv.appendChild(middleText);
+
+    leftDiv.appendChild(rightIcon);
+    leftDiv.appendChild(wrongIcon);
+
+    li.appendChild(rightDiv);
+    li.appendChild(middleDiv);
+    li.appendChild(leftDiv);
+
+    ul.appendChild(li);
+
 
 
 })
