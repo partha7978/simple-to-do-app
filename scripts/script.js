@@ -20,7 +20,12 @@ addButton.addEventListener("click", function() {
 
     var rightIcon = document.createElement("i");
     var wrongIcon = document.createElement("i");
-    
+
+    rightDiv.classList.add("right");
+    middleDiv.classList.add("middle");
+    leftDiv.classList.add("left");
+
+    serialNo.classList.add("list-number");
 
 
 })
