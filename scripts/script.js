@@ -26,6 +26,14 @@ addButton.addEventListener("click", function() {
     leftDiv.classList.add("left");
 
     serialNo.classList.add("list-number");
+    time.classList.add("time-list");
+
+    middleText.classList.add("main-list-content");
+
+    rightIcon.classList.add("fas", "fa-check");
+    wrongIcon.classList.add("fas", "fa-times");
+
+
 
 
 })
