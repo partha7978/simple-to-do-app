@@ -50,7 +50,9 @@ const addList = () => {
     textInput.value = "";
 }
 
-
+const removeList = function(e) {
+    e.target.parentNode.parentNode.remove();
+}
 
 addButton.addEventListener("click", function () {
     if (textInput.value.length > 0) {
@@ -62,8 +64,6 @@ addButton.addEventListener("click", function () {
         let finish = document.querySelector(".fa-check");
         let notFinish = document.querySelector(".fa-times");
 
-        notFinish.addEventListener("click", function(e) {
-           e.target.parentNode.parentNode.remove();
-        })
+        notFinish.addEventListener("click", removeList);
     }
 });
