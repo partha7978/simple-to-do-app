@@ -252,4 +252,6 @@ li:hover {
 
 /* main content ends */
 
-
+.toggle {
+  text-decoration: line-through;
+}

@@ -56,14 +56,16 @@ const removeList = function(e) {
 
 addButton.addEventListener("click", function () {
     if (textInput.value.length > 0) {
+        // for add
         addList();
 
-
-
-
+        // for remove
         let finish = document.querySelector(".fa-check");
         let notFinish = document.querySelector(".fa-times");
-
         notFinish.addEventListener("click", removeList);
+
+
+        // for toggle
+        
     }
 });
