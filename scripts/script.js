@@ -7,5 +7,20 @@ let notFinish = document.querySelector(".fa-times");
 
 
 addButton.addEventListener("click", function() {
-    console.log("click");
+    
+    var li = document.createElement("li");
+    var rightDiv = document.createElement("div");
+    var middleDiv = document.createElement("div");
+    var leftDiv = document.createElement("div");
+
+    var serialNo = document.createElement("span");
+    var time = document.createElement("span");
+
+    var middleText = document.createElement("span");
+
+    var rightIcon = document.createElement("i");
+    var wrongIcon = document.createElement("i");
+    
+
+
 })
