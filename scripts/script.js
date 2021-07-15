@@ -60,12 +60,19 @@ addButton.addEventListener("click", function () {
         addList();
 
         // for remove
-        let finish = document.querySelector(".fa-check");
+      
         let notFinish = document.querySelector(".fa-times");
         notFinish.addEventListener("click", removeList);
 
 
         // for toggle
-        
+        let finish = document.querySelector(".fa-check");
+        let text = document.querySelector(".main-list-content");
+        finish.addEventListener("click", function () {
+           console.log("working");
+           text.classList.toggle("toggle");
+        })
     }
 });
+
+
