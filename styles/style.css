@@ -236,7 +236,7 @@ li:hover {
   margin: 1rem;
 }
 
-.fa-check, .fa-trash-alt {
+.fa-check, .fa-trash-alt, .fa-redo-alt {
   margin: 1rem 2rem;
   margin-left: auto;
   cursor: pointer;

@@ -63,10 +63,9 @@ addButton.addEventListener("click", function () {
         // let finish = document.querySelector(".fa-check");
         // let text = document.querySelector(".main-list-content");
         rightIcon.addEventListener("click", function (e) {
-            console.log('target value', e.target);
-            console.log("working");
             middleText.classList.toggle("toggle");
-            console.log(middleText);
+            rightIcon.classList.toggle("fa-redo-alt");
+         
         })
       
     }
