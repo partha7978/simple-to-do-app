@@ -61,7 +61,7 @@ addButton.addEventListener("click", function () {
         document.querySelector(
           ".inputTime").value;
           console.log(link);
-       
+        time.innerHTML = link;
     
 
 
