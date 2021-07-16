@@ -218,7 +218,7 @@ li:hover {
   margin: 1rem;
 }
 
-.fa-check, .fa-times {
+.fa-check, .fa-trash-alt {
   margin: 1rem 2rem;
   margin-left: auto;
   cursor: pointer;
@@ -226,7 +226,7 @@ li:hover {
 .fa-check:hover {
   color: rgb(0, 223, 0);
 }
-.fa-times:hover {
+.fa-trash-alt:hover {
   color: red;
 }
 

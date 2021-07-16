@@ -32,7 +32,7 @@ addButton.addEventListener("click", function () {
         middleText.classList.add("main-list-content");
     
         rightIcon.classList.add("fas", "fa-check");
-        wrongIcon.classList.add("fas", "fa-times");
+        wrongIcon.classList.add("fas", "fa-trash-alt");
     
         rightDiv.appendChild(serialNo);
         rightDiv.appendChild(time);
@@ -50,8 +50,7 @@ addButton.addEventListener("click", function () {
     
         middleText.appendChild(document.createTextNode(textInput.value));
         textInput.value = "";
-
-
+    
 
 
         // for remove
