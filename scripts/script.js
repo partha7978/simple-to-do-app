@@ -82,7 +82,7 @@ addButton.addEventListener("click", function () {
       
     }
     else {
-        alert("OOps! You forget to add time or content. Please add it🤗")
+        alert("OOps! You forget to add time or content. Please add it  🤗")
     }
 });
 
