@@ -9,7 +9,7 @@ let timeAdd = document.querySelector(".inputTime");
 console.log(timeAdd.value, "default");
 
 addButton.addEventListener("click", function () {
-    if (textInput.value.length > 0 && timeAdd.value != "0:00") {
+    if (textInput.value.length > 0 && timeAdd.value > "0") {
         // for add
         var li = document.createElement("li");
         var rightDiv = document.createElement("div");
@@ -81,6 +81,7 @@ addButton.addEventListener("click", function () {
         })
       
     }
+
 });
 
 
