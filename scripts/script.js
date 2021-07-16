@@ -62,12 +62,12 @@ addButton.addEventListener("click", function () {
         // for toggle
         // let finish = document.querySelector(".fa-check");
         // let text = document.querySelector(".main-list-content");
-        // finish.addEventListener("click", function (e) {
-        //     console.log('target value', e.target);
-        //     console.log("working");
-        //     text.classList.toggle("toggle");
-        //     console.log(text);
-        // })
+        rightIcon.addEventListener("click", function (e) {
+            console.log('target value', e.target);
+            console.log("working");
+            middleText.classList.toggle("toggle");
+            console.log(middleText);
+        })
       
     }
 });
