@@ -1,9 +1,11 @@
 let addButton = document.querySelector(".inputAddButton");
 let ul = document.querySelector("ul");
 let textInput = document.querySelector(".input");
-let time = document.querySelector(".inputTime");
+let timeAdd = document.querySelector(".inputTime");
 // let finish = document.querySelector(".fa-check");
 // let notFinish = document.querySelector(".fa-times");
+
+
 
 
 addButton.addEventListener("click", function () {
@@ -50,6 +52,16 @@ addButton.addEventListener("click", function () {
     
         middleText.appendChild(document.createTextNode(textInput.value));
         textInput.value = "";
+
+
+
+
+        //for time adding
+        var link =
+        document.querySelector(
+          ".inputTime").value;
+          console.log(link);
+       
     
 
 
