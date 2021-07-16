@@ -54,6 +54,12 @@ html {
   height: auto;
   background-color: rgb(179, 179, 179);
   display: flex;
+
+
+  background-color: #f9c5d1;
+  background-image: linear-gradient(315deg, #ff829f 0%, #5c59ff 74%);
+  
+  
 }
 
 .header-text {
