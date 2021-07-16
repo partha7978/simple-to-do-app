@@ -6,10 +6,10 @@ let timeAdd = document.querySelector(".inputTime");
 // let notFinish = document.querySelector(".fa-times");
 
 
-
+console.log(timeAdd.value, "default");
 
 addButton.addEventListener("click", function () {
-    if (textInput.value.length > 0) {
+    if (textInput.value.length > 0 && timeAdd.value != "0:00") {
         // for add
         var li = document.createElement("li");
         var rightDiv = document.createElement("div");
