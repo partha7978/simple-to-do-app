@@ -146,7 +146,7 @@ html {
   margin: 0.5rem;
   padding: 0.35rem;
   width:20rem;
-  border-radius: 20px;
+  border-radius: 7px;
   outline: none;
   border: 1px solid black;
 }
@@ -155,7 +155,7 @@ html {
   margin: 0.5rem 1rem;
   padding: 0.30rem;
   width:7rem;
-  border-radius: 20px;
+  border-radius: 7px;
   outline: none;
   border: 1px solid black;
 }
@@ -164,20 +164,22 @@ html {
   margin: 0.5rem 1rem;
   padding: 0.35rem;
   width: 5rem;
-  border-radius: 20px;
+  border-radius: 7px;
   outline: none;
   border: 1px solid black;
 
   color: rgb(0, 0, 0);            
-  box-shadow: 0 0 5px rgb(130, 130, 130);
+  box-shadow: 0 0 5px rgb(175, 177, 255);
   display: block;
   font-weight: 540;
   cursor: pointer;
+
+  background-color: #f9c5d1;
+  background-image: linear-gradient(315deg, #ffd3dd 0%, #c5c4ff 74%);
+  
+  
 }
-.inputAddButton:hover {
-  color: rgb(0, 0, 0);
-  box-shadow: 0 0 10px rgb(96, 120, 255);
-}
+
 /* input section ends */
 
 /* to do list section starts */
