@@ -241,6 +241,12 @@ li:hover {
   margin-left: auto;
   cursor: pointer;
 } 
+.fa-redo-alt {
+  transition: all 0.3s linear;
+}
+.fa-redo-alt:hover {
+  transform:rotate(70deg);
+}
 .fa-check:hover {
   color: rgb(0, 223, 0);
 }
