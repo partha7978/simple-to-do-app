@@ -2,13 +2,9 @@ let addButton = document.querySelector(".inputAddButton");
 let ul = document.querySelector("ul");
 let textInput = document.querySelector(".input");
 let timeAdd = document.querySelector(".inputTime");
-// let finish = document.querySelector(".fa-check");
-// let notFinish = document.querySelector(".fa-times");
 
 
-console.log(timeAdd.value, "default");
-
-addButton.addEventListener("click", function () {
+const addlistAfterClick = function() {
     if (textInput.value.length > 0 && timeAdd.value > "0") {
         // for add
         var li = document.createElement("li");
@@ -53,14 +49,9 @@ addButton.addEventListener("click", function () {
         middleText.appendChild(document.createTextNode(textInput.value));
         textInput.value = "";
 
-
         //for serial number 
         var lists = document.getElementsByTagName("li");
         serialNo.innerText = lists.length;
-      
-       
-      
-
 
         //for time adding
         var link =
@@ -69,8 +60,6 @@ addButton.addEventListener("click", function () {
           console.log(link);
         time.innerHTML = link;
 
-
-
         // for remove
         wrongIcon.onclick = function(e) {
             console.log("click");
@@ -78,8 +67,6 @@ addButton.addEventListener("click", function () {
         };
 
         // for toggle
-        // let finish = document.querySelector(".fa-check");
-        // let text = document.querySelector(".main-list-content");
         rightIcon.addEventListener("click", function (e) {
             middleText.classList.toggle("toggle");
             rightIcon.classList.toggle("fa-redo-alt");
@@ -90,7 +77,9 @@ addButton.addEventListener("click", function () {
     else {
         alert("OOps! You forget to add time or content. Please add it  🤗")
     }
-});
+}
+
+addButton.addEventListener("click", addlistAfterClick);
 
 
 
