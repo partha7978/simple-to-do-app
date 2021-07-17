@@ -79,8 +79,7 @@ const addlistAfterClick = function() {
     }
 }
 
-addButton.addEventListener("click", addlistAfterClick);
-textInput.addEventListener("keypress", function (event) {
+const addListAfterKeypress = function(event) {
     if (textInput.value.length > 0 && timeAdd.value > "0" && event.keyCode ===13) {
         // for add
         var li = document.createElement("li");
@@ -150,6 +149,8 @@ textInput.addEventListener("keypress", function (event) {
         })
       
     }
-})
+}
+addButton.addEventListener("click", addlistAfterClick);
+textInput.addEventListener("keypress", addListAfterKeypress);
 
 
