@@ -55,8 +55,9 @@ addButton.addEventListener("click", function () {
 
 
         //for serial number 
-   
-           serialNo.innerText = lists.length;
+        var lists = document.getElementsByTagName("li");
+        console.log(lists.length, "list");
+           serialNo.innerText = "1";
       
        
       
