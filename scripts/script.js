@@ -75,13 +75,13 @@ const addlistAfterClick = function() {
       
     }
     else {
-        alert("OOps! You forget to add time or content. Please add it  🤗")
+        alert("OOps! You forget to add time or content. Please add it  🤗");
     }
 }
 
 addButton.addEventListener("click", addlistAfterClick);
 textInput.addEventListener("keypress", function (event) {
-    if (textInput.value.length > 0 && timeAdd.value > "0" ) {
+    if (textInput.value.length > 0 && timeAdd.value > "0" && event.keyCode ===13) {
         // for add
         var li = document.createElement("li");
         var rightDiv = document.createElement("div");
