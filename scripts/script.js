@@ -54,6 +54,14 @@ addButton.addEventListener("click", function () {
         textInput.value = "";
 
 
+        //for serial number 
+   
+           serialNo.innerText = lists.length;
+        //    serialNo.innerText ++;
+      
+            // serialNo.innerText ++;
+       
+      
 
 
         //for time adding
@@ -62,7 +70,7 @@ addButton.addEventListener("click", function () {
           ".inputTime").value;
           console.log(link);
         time.innerHTML = link;
-    
+
 
 
         // for remove
