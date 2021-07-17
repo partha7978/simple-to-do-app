@@ -57,9 +57,7 @@ addButton.addEventListener("click", function () {
         //for serial number 
    
            serialNo.innerText = lists.length;
-        //    serialNo.innerText ++;
       
-            // serialNo.innerText ++;
        
       
 
