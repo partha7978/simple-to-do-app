@@ -121,9 +121,8 @@ html {
   width: 80%;
   border-radius: 24px;
 
-  box-shadow:  18px 18px 36px #ff79d9,
-                -18px -18px 36px #8c5bff;
-
+  box-shadow:  13px 13px 26px #ff79d9,
+  -13px -13px 26px #8c5bff;
 
   background-color: #ffcfdf;
   background-image: linear-gradient(315deg, #ffcfdf 0%, #b0f3f1 74%);

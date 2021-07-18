@@ -91,8 +91,6 @@ const addListAfterKeypress = function(event) {
         {
             alert("OOps! You forget to add time or content. Please add it  🤗");
         }
-
-      
     }
 }
 addButton.addEventListener("click", addlistAfterClick);
