@@ -24,8 +24,8 @@
         height: 90%;
         width: 94%;
 
-        box-shadow: inset 5px 5px 15px #07a19c,
-            inset -5px -5px 15px hsl(340, 100%, 63%);
+        box-shadow: inset 5px 5px 10px #07a19c,
+            inset -5px -5px 10px hsl(340, 100%, 63%);
     }
     .inputTime, .inputAddButton {
         margin: 0.3rem;
