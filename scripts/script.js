@@ -50,17 +50,16 @@ const main = function() {
      //for serial number 
      var lists = document.getElementsByTagName("li");
      serialNo.innerText = lists.length;
+     console.log(lists.length, "list serial number");
 
      //for time adding
      var link =
      document.querySelector(
        ".inputTime").value;
-       console.log(link);
      time.innerHTML = link;
 
      // for remove
      wrongIcon.onclick = function(e) {
-         console.log("click");
         e.target.parentNode.parentNode.remove();
      };
 
