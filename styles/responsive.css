@@ -1,73 +1,76 @@
 @media only screen and (max-width: 720px) {
-    .main-content-div {
-        height: 80%;
-        width: auto;
-    }
-    .main-conten {
-        /* min-height: 95%; */
-        height: 100%;
-    }
-    .input-div {
-        height: auto;
-    }
+  .main-content-div {
+    height: 80%;
+    width: auto;
+  }
+  .main-conten {
+    /* min-height: 95%; */
+    height: 100%;
+  }
+  .input-div {
+    height: auto;
+  }
 }
 
 @media only screen and (max-width: 560px) {
-    .heading-content-text {
-        margin: 2rem 2rem 0.2rem 2rem;
-        font-size:1.5em;
-    }
-    .main-content-div {
-        height: 78%;
-    }
-    .main-content {
-        height: 90%;
-        width: 94%;
+  .heading-content-text {
+    margin: 2rem 2rem 0.2rem 2rem;
+    font-size: 1.5em;
+  }
+  .main-content-div {
+    height: 78%;
+  }
+  .main-content {
+    height: 90%;
+    width: 94%;
 
-        box-shadow: inset 5px 5px 10px #07a19c,
-            inset -5px -5px 10px hsl(340, 100%, 63%);
-    }
-    .inputTime, .inputAddButton {
-        margin: 0.3rem;
-    }
-    .input {
-        margin: 0.3rem 0.7rem;
-    }
-    ul{
-        width: 90%;
-        margin: 0.4rem;
-    }
-    li {
-        margin: 1rem 0.2rem;
-    }
-    .list-number, .time-list {
-        margin:1rem 0.3rem;
-    }
-    ::-webkit-scrollbar {
-        width: 3px;   
-    }
+    box-shadow: inset 5px 5px 10px #07a19c,
+      inset -5px -5px 10px hsl(340, 100%, 63%);
+  }
+  .inputTime,
+  .inputAddButton {
+    margin: 0.3rem;
+  }
+  .input {
+    margin: 0.3rem 0.7rem;
+  }
+  ul {
+    width: 90%;
+    margin: 0.4rem;
+  }
+  li {
+    margin: 1rem 0.2rem;
+  }
+  .list-number,
+  .time-list {
+    margin: 1rem 0.3rem;
+  }
+  ::-webkit-scrollbar {
+    width: 3px;
+  }
 }
 
 @media only screen and (max-width: 380px) {
-    li {
-        flex-wrap: wrap;
-    }
-    .right {
-        width:100%;
-        justify-content: center;
-    }
-    .middle {
-        width:100%;
-        justify-content: center;    
-    }
-    .left {
-        width: 100%;
-        justify-content: center;
-        text-align: center;
-        margin-left:0;
-    }
-    .fa-check, .fa-times {
-        text-align: center;
-        margin-left:1rem;
-    }
+  li {
+    flex-wrap: wrap;
+  }
+  .right {
+    width: 100%;
+    justify-content: center;
+  }
+  .middle {
+    width: 100%;
+    justify-content: center;
+  }
+  .left {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin-left: 0;
+  }
+  .fa-check,
+  .fa-times {
+    text-align: center;
+    margin-left: 1rem;
+  }
 }
