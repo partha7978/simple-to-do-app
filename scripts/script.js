@@ -50,7 +50,9 @@ const main = function() {
      //for serial number 
      var lists = document.getElementsByTagName("li");
      serialNo.innerText = lists.length;
-     console.log(lists.length, "list serial number");
+    //  console.log(lists.length, "list serial number");
+
+
 
      //for time adding
      var link =
@@ -58,13 +60,15 @@ const main = function() {
        ".inputTime").value;
      time.innerHTML = link;
 
+
+
      // for remove
      wrongIcon.onclick = function(e) {
         e.target.parentNode.parentNode.remove();
 
 
 
-            //for serial number update
+            //for serial number update After EVERY DELETION---------------
             var ul = document.querySelector("ul");
             var lists = document.getElementsByTagName("li");
 
@@ -82,6 +86,9 @@ const main = function() {
             // console.log(ulArr, "arrayof Ul");
  
      };
+
+
+     
      // for toggle
      rightIcon.addEventListener("click", function (e) {
          middleText.classList.toggle("toggle");
