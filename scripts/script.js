@@ -95,10 +95,10 @@ const main = function() {
             }
             console.log(ulArr, "arrayof Ul");
 
-            for(var i=0; i<=ulArr.length; i++) {
+            // for(var i=0; i<=ulArr.length; i++) {
             
-                console.log(ulArr[i], 'ulArre');
-            }
+            //     console.log(ulArr[i], 'ulArre');
+            // }
  
      };
      // for toggle
