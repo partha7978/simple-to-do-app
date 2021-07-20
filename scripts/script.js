@@ -94,11 +94,6 @@ const main = function() {
                 ul.childNodes[i].childNodes[0].childNodes[0].innerText = i-2;
             }
             console.log(ulArr, "arrayof Ul");
-
-            // for(var i=0; i<=ulArr.length; i++) {
-            
-            //     console.log(ulArr[i], 'ulArre');
-            // }
  
      };
      // for toggle
