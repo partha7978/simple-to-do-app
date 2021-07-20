@@ -70,7 +70,6 @@ const main = function() {
 
             //for serial number update After EVERY DELETION---------------
             var ul = document.querySelector("ul");
-            // var lists = document.getElementsByTagName("li");
 
             var ulArr = [];
             for(var i= 3; i<= ul.childNodes.length - 1; i++) {
