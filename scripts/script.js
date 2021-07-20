@@ -78,15 +78,6 @@ const main = function() {
              arr.push(i); 
             }
             console.log(arr, "array");
-
-            // for(var i=1; i<=arr.length; i++) {
-
-             
-
-                // serialNumber.textContent = i;
-                // console.log(serialNumber.textContent, 'text content1');
-                // console.log(serialNumber);
-            // }
            
             var ulArr = [];
             for(var i= 3; i<= ul.childNodes.length - 1; i++) {
