@@ -72,14 +72,14 @@ const main = function() {
             for(var i=1; i<=lists.length; i++) {
              arr.push(i); 
             }
-            console.log(arr, "array");
+            // console.log(arr, "array");
            
             var ulArr = [];
             for(var i= 3; i<= ul.childNodes.length - 1; i++) {
                 ulArr.push(ul.childNodes[i]);
                 ul.childNodes[i].childNodes[0].childNodes[0].innerText = i-2;
             }
-            console.log(ulArr, "arrayof Ul");
+            // console.log(ulArr, "arrayof Ul");
  
      };
      // for toggle
