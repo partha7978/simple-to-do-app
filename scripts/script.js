@@ -61,16 +61,41 @@ const main = function() {
      // for remove
      wrongIcon.onclick = function(e) {
         e.target.parentNode.parentNode.remove();
-     };
 
+
+
+            //for serial number update
+            // var serialNumber = document.querySelector(".list-number");
+            // var lists = document.getElementsByTagName("li");
+            // serialNo.innerText = lists.length;
+            // console.log(lists.length, "list serial number updated");
+
+
+
+            // var arr = [];
+            // for(var i=1; i<=lists.length; i++) {
+            //  arr.push(i); 
+            // }
+            // console.log(arr, "array");
+
+            // for(var i=0; i<arr.length; i++) {
+            //     serialNumber.textContent = arr[i];
+            //     console.log(serialNumber.textContent, 'text content1');
+            //     console.log(serialNumber);
+            // }
+
+     
+ 
+     };
      // for toggle
      rightIcon.addEventListener("click", function (e) {
          middleText.classList.toggle("toggle");
          rightIcon.classList.toggle("fa-redo-alt");
          rightIcon.classList.toggle("fa-check");
      })
-   
 }
+
+
 
 const addlistAfterClick = function() {
     if (textInput.value.length > 0 && timeAdd.value > "0") {
