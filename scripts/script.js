@@ -72,10 +72,10 @@ const main = function() {
             var ul = document.querySelector("ul");
             var lists = document.getElementsByTagName("li");
 
-            var arr = [];
-            for(var i=1; i<=lists.length; i++) {
-             arr.push(i); 
-            }
+            // var arr = [];
+            // for(var i=1; i<=lists.length; i++) {
+            //  arr.push(i); 
+            // }
             // console.log(arr, "array");
            
             var ulArr = [];
@@ -88,7 +88,7 @@ const main = function() {
      };
 
 
-     
+
      // for toggle
      rightIcon.addEventListener("click", function (e) {
          middleText.classList.toggle("toggle");
