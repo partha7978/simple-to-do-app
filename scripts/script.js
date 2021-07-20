@@ -68,10 +68,6 @@ const main = function() {
             var ul = document.querySelector("ul");
             var serialNumber = document.querySelector(".list-number");
             var lists = document.getElementsByTagName("li");
-            // serialNo.innerText = lists.length;
-            // console.log(lists.length, "list serial number updated");
-
-
 
             var arr = [];
             for(var i=1; i<=lists.length; i++) {
