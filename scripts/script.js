@@ -65,26 +65,40 @@ const main = function() {
 
 
             //for serial number update
-            // var serialNumber = document.querySelector(".list-number");
-            // var lists = document.getElementsByTagName("li");
+            var ul = document.querySelector("ul");
+            var serialNumber = document.querySelector(".list-number");
+            var lists = document.getElementsByTagName("li");
             // serialNo.innerText = lists.length;
             // console.log(lists.length, "list serial number updated");
 
 
 
-            // var arr = [];
-            // for(var i=1; i<=lists.length; i++) {
-            //  arr.push(i); 
-            // }
-            // console.log(arr, "array");
+            var arr = [];
+            for(var i=1; i<=lists.length; i++) {
+             arr.push(i); 
+            }
+            console.log(arr, "array");
 
-            // for(var i=0; i<arr.length; i++) {
-            //     serialNumber.textContent = arr[i];
-            //     console.log(serialNumber.textContent, 'text content1');
-            //     console.log(serialNumber);
-            // }
+            // for(var i=1; i<=arr.length; i++) {
 
-     
+             
+
+                // serialNumber.textContent = i;
+                // console.log(serialNumber.textContent, 'text content1');
+                // console.log(serialNumber);
+            // }
+           
+            var ulArr = [];
+            for(var i= 3; i<= ul.childNodes.length - 1; i++) {
+                ulArr.push(ul.childNodes[i]);
+                ul.childNodes[i].childNodes[0].childNodes[0].innerText = i-2;
+            }
+            console.log(ulArr, "arrayof Ul");
+
+            for(var i=0; i<=ulArr.length; i++) {
+            
+                console.log(ulArr[i], 'ulArre');
+            }
  
      };
      // for toggle
