@@ -92,7 +92,7 @@ const main = function() {
 
 
 
-const addlistAfterClick = function() {
+const addlistAfterClick = () => {
     if (textInput.value.length > 0 && timeAdd.value > "0") {
         main();
     }
