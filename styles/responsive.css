@@ -18,14 +18,13 @@
     font-size: 1.5em;
   }
   .main-content-div {
-    height: 78%;
+    height: 87%;
   }
   .main-content {
     height: 90%;
     width: 94%;
-
-    box-shadow: inset 5px 5px 10px #07a19c,
-      inset -5px -5px 10px hsl(340, 100%, 63%);
+    box-shadow:  13px 13px 26px #ff79d9,
+    -13px -13px 26px #8c5bff;
   }
   .inputTime,
   .inputAddButton {
