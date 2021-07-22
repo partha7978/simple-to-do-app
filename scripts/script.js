@@ -63,7 +63,7 @@ const main = function() {
 
 
      // for remove
-     wrongIcon.onclick = function(e) {
+     wrongIcon.onclick = (e) => {
         e.target.parentNode.parentNode.remove();
 
 
