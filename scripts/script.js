@@ -101,7 +101,7 @@ const addlistAfterClick = () => {
     }
 }
 
-const addListAfterKeypress = function(event) {
+const addListAfterKeypress = (event) => {
     if (textInput.value.length > 0 && event.keyCode ===13) {
         if(timeAdd.value > "0") {
             main();
