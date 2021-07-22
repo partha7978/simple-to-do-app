@@ -5,18 +5,18 @@ let timeAdd = document.querySelector(".inputTime");
 
 const main = function() {
      // for add
-     var li = document.createElement("li");
-     var rightDiv = document.createElement("div");
-     var middleDiv = document.createElement("div");
-     var leftDiv = document.createElement("div");
+     let li = document.createElement("li");
+     let rightDiv = document.createElement("div");
+     let middleDiv = document.createElement("div");
+     let leftDiv = document.createElement("div");
  
-     var serialNo = document.createElement("span");
-     var time = document.createElement("span");
+     let serialNo = document.createElement("span");
+     let time = document.createElement("span");
  
-     var middleText = document.createElement("span");
+     let middleText = document.createElement("span");
  
-     var rightIcon = document.createElement("i");
-     var wrongIcon = document.createElement("i");
+     let rightIcon = document.createElement("i");
+     let wrongIcon = document.createElement("i");
  
      rightDiv.classList.add("right");
      middleDiv.classList.add("middle");
@@ -48,14 +48,14 @@ const main = function() {
      textInput.value = "";
 
      //for serial number 
-     var lists = document.getElementsByTagName("li");
+     let lists = document.getElementsByTagName("li");
      serialNo.innerText = lists.length;
     //  console.log(lists.length, "list serial number");
 
 
 
      //for time adding
-     var link =
+     let link =
      document.querySelector(
        ".inputTime").value;
      time.innerHTML = link;
@@ -69,10 +69,10 @@ const main = function() {
 
 
             //for serial number update After EVERY DELETION---------------
-            var ul = document.querySelector("ul");
+            let ul = document.querySelector("ul");
 
-            var ulArr = [];
-            for(var i= 3; i<= ul.childNodes.length - 1; i++) {
+            let ulArr = [];
+            for(let i= 3; i<= ul.childNodes.length - 1; i++) {
                 ulArr.push(ul.childNodes[i]);
                 ul.childNodes[i].childNodes[0].childNodes[0].innerText = i-2;
             }
