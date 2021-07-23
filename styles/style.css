@@ -277,4 +277,6 @@ li:hover {
 
 .toggle {
   text-decoration: line-through;
+  font-size: 900;
+  color: rgb(0, 190, 41);
 }
