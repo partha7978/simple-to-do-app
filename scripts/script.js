@@ -3,7 +3,7 @@ let ul = document.querySelector("ul");
 let textInput = document.querySelector(".input");
 let timeAdd = document.querySelector(".inputTime");
 
-const main = function() {
+const main = () => {
      // for add
      let li = document.createElement("li");
      let rightDiv = document.createElement("div");
