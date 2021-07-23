@@ -74,7 +74,7 @@ const main = function() {
      };
 
      // for toggle
-     rightIcon.addEventListener("click", function (e) {
+     rightIcon.addEventListener("click",  () => {
          middleText.classList.toggle("toggle");
          rightIcon.classList.toggle("fa-redo-alt");
          rightIcon.classList.toggle("fa-check");
