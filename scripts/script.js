@@ -50,9 +50,6 @@ const main = function() {
      //for serial number 
      let lists = document.getElementsByTagName("li");
      serialNo.innerText = lists.length;
-    //  console.log(lists.length, "list serial number");
-
-
 
      //for time adding
      let link =
@@ -60,27 +57,21 @@ const main = function() {
        ".inputTime").value;
      time.innerHTML = link;
 
-
-
      // for remove
      wrongIcon.onclick = (e) => {
         e.target.parentNode.parentNode.remove();
-
-
 
             //for serial number update After EVERY DELETION---------------
             let ul = document.querySelector("ul");
 
             let ulArr = [];
-            for(let i= 3; i<= ul.childNodes.length - 1; i++) {
+            for(let i= 3; i <= ul.childNodes.length - 1; i++) {
                 ulArr.push(ul.childNodes[i]);
                 ul.childNodes[i].childNodes[0].childNodes[0].innerText = i-2;
             }
-            // console.log(ulArr, "arrayof Ul");
+           
  
      };
-
-
 
      // for toggle
      rightIcon.addEventListener("click", function (e) {
@@ -89,8 +80,6 @@ const main = function() {
          rightIcon.classList.toggle("fa-check");
      })
 }
-
-
 
 const addlistAfterClick = () => {
     if (textInput.value.length > 0 && timeAdd.value > "0") {
