@@ -141,6 +141,11 @@ html {
   border-radius: 7px;
   outline: none;
   border: 1px solid black;
+  background: #e0e6e9;
+}
+::placeholder {
+  color: rgb(65, 63, 63);
+  opacity: 1;
 }
 
 .inputTime {
@@ -148,6 +153,7 @@ html {
   padding: 0.30rem;
   width:7rem;
   border-radius: 7px;
+  background: #e0e6e9;
   outline: none;
   border: 1px solid black;
 }
@@ -157,19 +163,22 @@ html {
   padding: 0.35rem;
   width: 5rem;
   border-radius: 7px;
-  outline: none;
-  border: 1px solid black;
-
-  color: rgb(0, 0, 0);            
-  box-shadow: 0 0 5px rgb(175, 177, 255);
+  color: rgb(0, 0, 0); 
+  letter-spacing:1px; 
+  font-weight: bold;          
   display: block;
   font-weight: 540;
   cursor: pointer;
+  background: #e0e6e9;
+  box-shadow:  5px 5px 10px #acb1b3,
+  -5px -5px 10px #ffffff;
 
-  background-color: #f9c5d1;
-  background-image: linear-gradient(315deg, #ffd3dd 0%, #c5c4ff 74%);
-  
-  
+  outline: none;
+  border: none;
+  transition: all 1s;
+}
+.inputAddButton:hover {
+ transform: scale(1.04);
 }
 
 /* input section ends */
@@ -273,3 +282,5 @@ li:hover {
   font-size: 900;
   color: rgb(0, 190, 41);
 }
+
+
