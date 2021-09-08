@@ -15,7 +15,7 @@ html {
 .container {
   width: 100%;
   height: 100%;
-  background: #ededed;
+  background: #e0e6e9;
 
   
   
@@ -55,10 +55,8 @@ html {
   background-color: rgb(179, 179, 179);
   display: flex;
 
-
-  background-color: #f9c5d1;
-  background-image: linear-gradient(315deg, #ff829f 0%, #5c59ff 74%);
-  
+  background-color: #abe9cd;
+  background-image: linear-gradient(315deg, #bddacc 0%, #3eadcf 74%);
   
 }
 
@@ -119,8 +117,9 @@ html {
   width: 80%;
   border-radius: 24px;
 
-  background: #ededed;
-  box-shadow: 28px 28px 35px #b9b9b9, -28px -28px 35px #ffffff;
+  background: #e0e6e9;
+  box-shadow:  26px 26px 50px #989c9e,
+               -26px -26px 50px #ffffff;
       
 }
 
