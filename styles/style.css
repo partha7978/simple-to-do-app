@@ -77,10 +77,15 @@ html {
   border-radius: 50%;
   border: none;
   outline: none;
-  box-shadow: 2px 4px 1rem rgba(105, 145, 255, 1);
+  background: #e0e6e9;
+  font-size: 1.1rem;
   margin-left: auto;
 }
 
+/* to remove the moon title from the ionions icon */
+ion-icon {
+  pointer-events: none;
+ }
 .dark-mode-icon {
   font-size: 1rem;
 }
