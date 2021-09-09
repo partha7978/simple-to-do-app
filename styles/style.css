@@ -80,15 +80,14 @@ html {
   background: #e0e6e9;
   font-size: 1.1rem;
   margin-left: auto;
+  cursor: pointer;
 }
 
 /* to remove the moon title from the ionions icon */
 ion-icon {
   pointer-events: none;
  }
-.dark-mode-icon {
-  font-size: 1rem;
-}
+
 /* headert section ends */
 
 /* heading starts */
