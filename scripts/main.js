@@ -16,6 +16,7 @@ let insertData = (sn, time, task) => {
 }
 
 let displayData = () => {
+    document.getElementById("dataul").innerHTML = "";
     let keys = Object.keys(localStorage);
     let count = 1;
     for (let key of keys) {
@@ -34,5 +35,5 @@ let saveData = () => {
     let inputText = document.getElementById("inputText").value;
     let inputTime = document.getElementById("inputTime").value;
     localStorage.setItem(inputText, inputTime);
-    location.reload();
+    displayData();
 }
