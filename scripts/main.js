@@ -9,7 +9,7 @@ let insertData = (sn, time, task) => {
         </div>
         <div class="left">
             <i class="fas fa-check"></i>
-            <i class="fas fa-trash-alt"></i>
+            <i class="fas fa-trash-alt" onclick="removeTask('${task}')"></i>
         </div>
     </li>`
     return temp;
@@ -31,5 +31,10 @@ let saveData = () => {
     let inputText = document.getElementById("inputText").value;
     let inputTime = document.getElementById("inputTime").value;
     localStorage.setItem(inputText, inputTime);
+    displayData();
+}
+
+let removeTask = (key) => {
+    localStorage.removeItem(key.trim());
     displayData();
 }
