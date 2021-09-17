@@ -20,16 +20,12 @@ let displayData = () => {
     let keys = Object.keys(localStorage);
     let count = 1;
     for (let key of keys) {
-        console.log(`${key}: ${localStorage.getItem(key)}`);
         document.getElementById("dataul").innerHTML += insertData(count, localStorage.getItem(key), key);
         count++;
     }
-    console.log("end of loop");
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-    displayData();
-});
+displayData();
 
 let saveData = () => {
     let inputText = document.getElementById("inputText").value;
