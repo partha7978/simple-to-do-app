@@ -30,9 +30,13 @@ displayData();
 let saveData = () => {
     let inputText = document.getElementById("inputText").value;
     let inputTime = document.getElementById("inputTime").value;
-    let dataArray = [false, inputTime];
-    localStorage.setItem(inputText, JSON.stringify(dataArray));
-    displayData();
+    if (inputText.length == 0 || inputTime.length == 0) {
+        alert("OOps! You forget to add time or content. Please add it  🤗");
+    } else {
+        let dataArray = [false, inputTime];
+        localStorage.setItem(inputText, JSON.stringify(dataArray));
+        displayData();
+    }
 }
 
 let removeTask = (key) => {
