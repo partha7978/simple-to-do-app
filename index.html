@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta name="theme-color" content="#5c59ff">
+    <meta name="theme-color" content="#5c59ff"> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,52 +16,76 @@
 
 
     <!-- For font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- for animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
     <link rel="icon" href="./images/Partha.png" type="image/x-icon">
 
 
 </head>
-
 <body>
     <div class="container">
         <div class="header">
             <span class="header-text">PARTHA</span>
-            <button class="dark-mode-button btn-toggle" title="Change theme">
-                <ion-icon class="dark-mode-icon" name="moon-sharp"></ion-icon>
-            </button>
+            <button class="dark-mode-button btn-toggle" title="Change theme"><ion-icon class="dark-mode-icon" name="moon-sharp"></ion-icon></button>
         </div>
 
         <div class="heading-content">
+            <!-- <span class="heading-content-text animate__bounce">Write your to-do here</span> -->
             <span class="heading-content-text animate__bounce">Write your to-do here</span>
         </div>
+
+
         <div class="main-content-div">
             <div class="main-content">
                 <div class="input-div">
                     <label for="appt">Select a time: </label>
-                    <input type="time" class="inputTime" id="inputTime" placeholder="Add time" />
-                    <input type="text" class="input" id="inputText" placeholder="Write to-do here" />
-                    <button class="inputAddButton" title="Click here to add" onclick="saveData()">Add</button>
+                    <input type="time" class="inputTime" placeholder="Add time" />
+                    <input type="text" class="input" placeholder="Write to-do here" />
+                    <button class="inputAddButton" title="Click here to add">Add</button>
                 </div>
                 <div class="to-do-list-div">
-                    <ul id="dataul">
-
-                    </ul>
+                        <ul>
+                            <!-- <li>
+                                <div class="right">
+                                    <span class="list-number">1.</span>
+                                    <span class="time-list">12:44  PM</span>
+                                   
+                                </div>
+                                <div class="middle">
+                                    <span class="main-list-content">Eating maggie </span>
+                                </div>
+                                
+                                <div class="left">
+                                    <i class="fas fa-check"></i>
+                                    <i class="fas fa-trash-alt"></i>
+                                </div>
+                                
+                            </li> -->
+                        </ul>
                 </div>
             </div>
         </div>
-    </div>
+    </div>  
 
-    <script src="scripts/main.js"></script>
 
-    <!-- For ionions icons  -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="./scripts/script.js"></script>   
+<script src="./scripts/darkMode.js"></script>  
+
+
+<!-- For ionions icons  -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
-
 </html>
