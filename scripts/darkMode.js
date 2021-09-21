@@ -4,6 +4,7 @@ let container = document.querySelector(".container");
 let header = document.querySelector(".header");
 
 
+
 btn.addEventListener("click", () =>{
 
    if(i.getAttribute("name") === "moon-sharp") {
@@ -18,5 +19,6 @@ btn.addEventListener("click", () =>{
 
    container.classList.toggle("dark-mode-color");
    header.classList.toggle("dark-mode-color");
+   btn.classList.toggle("dark-mode-color-for-btn");
   
 })

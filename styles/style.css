@@ -84,12 +84,20 @@ html {
   font-size: 1.3rem;
   margin-left: auto;
   cursor: pointer;
+  transition: all 1.5s;
+
+  /* to make border transparent */
+  background-color: transparent;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.dark-mode-color-for-btn {
+  color: rgb(233, 233, 233);
 }
 
 /* to remove the moon title from the ionions icon */
 ion-icon {
   pointer-events: none;
-  transition: all 1s;
 }
  /* hover effect in light mode */
  .dark-mode-icon {
