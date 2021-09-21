@@ -5,6 +5,7 @@ let header = document.querySelector(".header");
 let mainContent = document.querySelector(".main-content");
 let inputTime = document.querySelector(".inputTime");
 let input = document.querySelector(".input");
+let inputBtn = document.querySelector(".inputAddButton");
 
 btn.addEventListener("click", () =>{
 
@@ -24,4 +25,5 @@ btn.addEventListener("click", () =>{
    mainContent.classList.toggle("main-content-dark-mode");
    inputTime.classList.toggle("input-dark-mode");
    input.classList.toggle("input-dark-mode");
+   inputBtn.classList.toggle("btn-dark-color");
 })

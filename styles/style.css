@@ -223,7 +223,13 @@ transform: rotate(10deg);
 
   outline: none;
   border: none;
-  transition: all 1s;
+  transition: all 1.5s;
+}
+.btn-dark-color {
+  color: rgb(233, 233, 233);
+  background: #152028;
+box-shadow:  5px 5px 10px #0c1216,
+             -5px -5px 10px #1e2e3a;
 }
 .inputAddButton:hover {
  transform: scale(1.04);
