@@ -6,6 +6,7 @@ let timeAdd = document.querySelector(".inputTime");
 const main = () => {
      // for add
      let li = document.createElement("li");
+     li.classList.add("li-hover-shadow", "list");
      let rightDiv = document.createElement("div");
      let middleDiv = document.createElement("div");
      let leftDiv = document.createElement("div");
