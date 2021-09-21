@@ -1,6 +1,7 @@
 const btn = document.querySelector(".dark-mode-button");
 const i = document.querySelector(".dark-mode-icon");
 let container = document.querySelector(".container");
+let header = document.querySelector(".header");
 
 
 btn.addEventListener("click", () =>{
@@ -16,5 +17,6 @@ btn.addEventListener("click", () =>{
  
 
    container.classList.toggle("dark-mode-color");
+   header.classList.toggle("dark-mode-color");
   
 })

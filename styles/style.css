@@ -10,18 +10,16 @@ html {
   margin: 0px;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
-  transition: all 1.5s;
+  
 }
 .container {
   width: 100%;
   height: 100%;
   background: #e0e6e9;
+  transition: all 1.5s;
 }
 
-.dark-mode-color {
-  background: #152028;
-  color: #fff;
-}
+
 /* SCROLL BAR STARTS */
 /* width */
 ::-webkit-scrollbar {
@@ -61,7 +59,10 @@ html {
    border-image: linear-gradient(to right, rgb(56, 83, 233), rgb(255, 67, 155));
    border-image-slice: 1;
 
+  color: #000;
   background: #e0e6e9;
+
+  transition: all 1.5s;
 }
 
 .header-text {
@@ -319,3 +320,8 @@ li:hover {
 }
 
 
+/* for dark mode */
+.dark-mode-color {
+  background: #152028;
+  color: rgb(233, 233, 233);
+}
