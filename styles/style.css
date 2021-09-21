@@ -149,6 +149,14 @@ transform: rotate(10deg);
   box-shadow:  26px 26px 50px #989c9e,
                -26px -26px 50px #ffffff;
       
+   transition: all 1.5s;
+}
+
+.main-content-dark-mode {
+  color: rgb(233, 233, 233);
+  background: #152028;
+  box-shadow:  18px 18px 36px #0a0f13,
+             -18px -18px 36px #20313d;
 }
 
 
@@ -170,13 +178,15 @@ transform: rotate(10deg);
   outline: none;
   border: 1px solid black;
   background: #e0e6e9;
-
-  
-  
+  transition: all 1.5s;
 }
 ::placeholder {
   color: rgb(65, 63, 63);
   opacity: 1;
+
+  background: -webkit-linear-gradient(50deg, rgb(56, 83, 233), rgb(255, 67, 155));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .inputTime {
@@ -187,6 +197,13 @@ transform: rotate(10deg);
   background: #e0e6e9;
   outline: none;
   border: 1px solid black;
+  transition: all 1.5s;
+}
+
+.input-dark-mode {
+  background: #152028;
+  color: rgb(233, 233, 233);
+  border: 0.5px solid white;
 }
 
 .inputAddButton {
