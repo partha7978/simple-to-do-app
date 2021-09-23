@@ -6,7 +6,7 @@ let mainContent = document.querySelector(".main-content");
 let inputTime = document.querySelector(".inputTime");
 let input = document.querySelector(".input");
 let inputBtn = document.querySelector(".inputAddButton");
-
+let textInputByKeypress = document.querySelector(".input");
 let unorderedList = document.querySelector("ul");
 
 btn.addEventListener("click", () => {
@@ -44,8 +44,7 @@ const listDarkMode = () => {
       lists[i].classList.toggle("li-hover-shadow");
       lists[i].classList.toggle("li-dark-color");
 
-
-      if(document.querySelector(".li-hover-shadow")) {
+      if (document.querySelector(".li-hover-shadow")) {
         console.log("li detected");
       }
     }
@@ -53,29 +52,33 @@ const listDarkMode = () => {
   //for adding dark mode in lists ends
 };
 
-
-
-
-
-
 // for update the color during adding of lists starts
-inputBtn.addEventListener("click", () => {
+
+const listDarkModeUpdate = () => {
   let addingList = document.querySelectorAll("li");
-  if(document.querySelector(".dark-mode-color")) {
-  
-  //  console.log(addingList.length, "size");
-  
-    for(let i=addingList.length -1; i >=0 ; i--  ) {
+  if (document.querySelector(".dark-mode-color")) {
+    //  console.log(addingList.length, "size");
+
+    for (let i = addingList.length - 1; i >= 0; i--) {
       addingList[i].classList.remove("li-hover-shadow");
       addingList[i].classList.add("li-dark-color");
     }
-  }
-  else{
-    for(let i=addingList.length -1; i >=0 ; i--  ) {
+  } else {
+    for (let i = addingList.length - 1; i >= 0; i--) {
       addingList[i].classList.remove("li-dark-color");
       addingList[i].classList.add("li-hover-shadow");
     }
   }
-})
+};
+
+inputBtn.addEventListener("click", () => {
+  listDarkModeUpdate();
+});
+
+textInputByKeypress.addEventListener("keypress", (e) => {
+  if (e.keyCode === 13) {
+    listDarkModeUpdate();
+  }
+});
 
 // for update the color during adding of lists ENDS here
