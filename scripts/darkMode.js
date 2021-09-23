@@ -46,7 +46,7 @@ const listDarkMode = () => {
 
 
       if(document.querySelector(".li-hover-shadow")) {
-console.log("li detected");
+        console.log("li detected");
       }
     }
   }
@@ -59,10 +59,23 @@ console.log("li detected");
 
 
 // for update the color during adding of lists starts
-if (document.querySelector(".dark-mode-color")) {
-    listDarkMode();
-  console.log("dark mode detected");
-} else {
-  console.log("light mode detected");
-}
-// for update the color during adding of lists ends
+inputBtn.addEventListener("click", () => {
+  let addingList = document.querySelectorAll("li");
+  if(document.querySelector(".dark-mode-color")) {
+  
+  //  console.log(addingList.length, "size");
+  
+    for(let i=addingList.length -1; i >=0 ; i--  ) {
+      addingList[i].classList.remove("li-hover-shadow");
+      addingList[i].classList.add("li-dark-color");
+    }
+  }
+  else{
+    for(let i=addingList.length -1; i >=0 ; i--  ) {
+      addingList[i].classList.remove("li-dark-color");
+      addingList[i].classList.add("li-hover-shadow");
+    }
+  }
+})
+
+// for update the color during adding of lists ENDS here
