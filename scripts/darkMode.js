@@ -102,21 +102,21 @@ textInputByKeypress.addEventListener("keypress", (e) => {
 // for update the color during adding of lists ENDS here
 
 //for system theme detection and set the theme according to that STARTS
-// if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-//   // window.location.reload(); //for reloding
-//   darkModeFunction();
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  // window.location.reload(); //for reloding
+  darkModeFunction();
 
-// console.log("dark mode detected");   // dark mode
-//   setTimeout(() => {
-//       alert("The webpage is in dark mode, You can also try the light mode by clicking on the top right corner icon.")
-//   }, 3000);
+console.log("dark mode detected");   // dark mode
+  setTimeout(() => {
+      alert("The webpage is in dark mode, You can also try the light mode by clicking on the top right corner icon.")
+  }, 3000);
   
-// }
-// else
-// {
-//   console.log("light mode detected"); // light mode
-//   setTimeout(() => {
-//       alert("The webpage is in light mode, You can also try the dark mode by clicking on the top right corner icon.")
-//   }, 3000);
-// }
+}
+else
+{
+  console.log("light mode detected"); // light mode
+  setTimeout(() => {
+      alert("The webpage is in light mode, You can also try the dark mode by clicking on the top right corner icon.")
+  }, 3000);
+}
 //for system theme detection and set the theme according to that ENDS
