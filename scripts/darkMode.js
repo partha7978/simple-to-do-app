@@ -110,7 +110,6 @@ console.log("dark mode detected");   // dark mode
   setTimeout(() => {
       alert("The webpage is in dark mode, You can also try the light mode by clicking on the top right corner icon.")
   }, 3000);
-  
 }
 else
 {
