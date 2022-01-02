@@ -51,29 +51,22 @@ const main = () => {
      //for serial number 
      let lists = document.getElementsByTagName("li");
      serialNo.innerText = lists.length;
-
      //for time adding
      let link =
      document.querySelector(
        ".inputTime").value;
      time.innerHTML = link;
-
      // for remove
      wrongIcon.onclick = (e) => {
         e.target.parentNode.parentNode.remove();
-
             //for serial number update After EVERY DELETION---------------
             let ul = document.querySelector("ul");
-
             let ulArr = [];
             for(let i= 3; i <= ul.childNodes.length - 1; i++) {
                 ulArr.push(ul.childNodes[i]);
                 ul.childNodes[i].childNodes[0].childNodes[0].innerText = i-2;
             }
-           
- 
      };
-
      // for toggle
      rightIcon.addEventListener("click",  () => {
          middleText.classList.toggle("toggle");
