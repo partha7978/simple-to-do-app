@@ -48,18 +48,18 @@ const main = () => {
      middleText.appendChild(document.createTextNode(textInput.value));
      textInput.value = "";
 
-     //for serial number 
+     //!for serial number 
      let lists = document.getElementsByTagName("li");
      serialNo.innerText = lists.length;
-     //for time adding
+     //!for time adding
      let link =
      document.querySelector(
        ".inputTime").value;
      time.innerHTML = link;
-     // for remove
+     //! for remove
      wrongIcon.onclick = (e) => {
         e.target.parentNode.parentNode.remove();
-            //for serial number update After EVERY DELETION---------------
+            //!for serial number update After EVERY DELETION---------------
             let ul = document.querySelector("ul");
             let ulArr = [];
             for(let i= 3; i <= ul.childNodes.length - 1; i++) {
@@ -67,7 +67,7 @@ const main = () => {
                 ul.childNodes[i].childNodes[0].childNodes[0].innerText = i-2;
             }
      };
-     // for toggle
+     //! for toggle
      rightIcon.addEventListener("click",  () => {
          middleText.classList.toggle("toggle");
          rightIcon.classList.toggle("fa-redo-alt");

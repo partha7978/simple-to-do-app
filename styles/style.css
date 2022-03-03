@@ -66,6 +66,7 @@ html {
   margin: 0.5rem 0.5rem 0.5rem 1rem;
   letter-spacing: 0.6rem;
   cursor: pointer;
+  user-select: none;
 }
 
 .dark-mode-button {
@@ -118,6 +119,7 @@ ion-icon {
   margin: 2rem;
   font-size: 1.8em;
   font-weight: 500;
+  user-select: none;
 }
 .animate__bounce {
   animation: bounce;
