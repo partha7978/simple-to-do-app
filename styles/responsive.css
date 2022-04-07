@@ -1,6 +1,6 @@
 @media only screen and (max-width: 720px) {
   .main-content-div {
-    height: 80%;
+    height:75%;
     width: auto;
   }
   .input-div {
@@ -10,7 +10,13 @@
 
 @media only screen and (max-width: 560px) {
   .main-content-div {
-    height: 100%;
+    height: 83%;
+  }
+  .heading-content {
+    height: 10%;
+  }
+  .header {
+    height: 7%;
   }
   .main-content, .main-content-dark-mode  {
     width: 100%;
@@ -19,6 +25,10 @@
     border-radius:0px;
     outline: none;
     box-shadow: 0 0 0;
+  }
+  .to-do-list-div {
+    height: 100%;
+    margin: 0.4rem 0 0 0;
   }
   .heading-content-text {
     margin: 2rem 2rem 0.2rem 2rem;
@@ -47,22 +57,19 @@
   }
 }
 @media only screen and (max-width: 460px) { 
-  .heading-content {
-    height: 15%;
-  }
+
   .heading-content-text {
-    margin: 2rem 2rem 0.2rem 2rem;
+    margin: 2rem 2rem 0rem 2rem;
     font-size: 1.4em;
-   
   }
-  .main-content-div {
-    height: 74%;
-    width: auto;
+  li {
+    margin: 0.5rem 0.2rem;
   }
-  .main-content {
-    /* min-height: 95%; */
-    height: 100%;
+
+  ::placeholder {
+    font-size: 0.9rem;
   }
+  
   ul {
     width: 97%;
     margin: 0rem;
