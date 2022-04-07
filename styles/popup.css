@@ -1,6 +1,6 @@
 /* !testing */
 /* The Modal (background) */
-.popup {
+.popup1 {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -14,9 +14,10 @@
     background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
   }
   
-  /* Modal Content */
+  /* popup Content */
   .popup-content {
-    background-color: #f0f4fb;
+    background-color: #152028;
+    color: white;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
@@ -38,7 +39,6 @@
     padding: 0.6rem 1.5rem;
     margin: 2rem 1rem 1rem 1rem;
     /* opacity: 0; */
-    /* background-color: #000000; */
     color: #ffffff;
     border: none;
     outline: none;
@@ -47,7 +47,8 @@
     transition: all 0.5s;
     cursor: pointer;
     border: 1px solid #000000;
-    background-color: #202020;
+    background-color: #4946ff;
+    letter-spacing: 2px;
   }
   
   .close:hover,
@@ -59,12 +60,12 @@
   
   /* ? FOR RESPONSIVE */
   @media only screen and (max-width: 1320px) {
-    .modal-content {
+    .popup-content {
       text-align: center
     }
   }
   @media only screen and (max-width: 695px) {
-    .modal-content {
+    .popup-content {
       width: 80%;
     }
   }
