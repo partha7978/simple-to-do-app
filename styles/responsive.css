@@ -9,6 +9,17 @@
 }
 
 @media only screen and (max-width: 560px) {
+  .main-content-div {
+    height: 100%;
+  }
+  .main-content, .main-content-dark-mode  {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius:0px;
+    outline: none;
+    box-shadow: 0 0 0;
+  }
   .heading-content-text {
     margin: 2rem 2rem 0.2rem 2rem;
     font-size: 1.5em;
