@@ -60,11 +60,10 @@ html {
   transition: all 1.5s;
 }
 
-.header-text {
-  font-size: 1.4rem;
-  font-weight: 900;
+.header-logo {
+  height: 1.7rem;
+  width: 6rem;
   margin: 0.5rem 0.5rem 0.5rem 1rem;
-  letter-spacing: 0.6rem;
   cursor: pointer;
   user-select: none;
 }
