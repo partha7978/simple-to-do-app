@@ -26,6 +26,7 @@
     outline: none;
     box-shadow: 0 0 0;
   }
+
   .to-do-list-div {
     height: 100%;
     margin: 0.4rem 0 0 0;
@@ -57,7 +58,19 @@
   }
 }
 @media only screen and (max-width: 460px) { 
+  .input-div {
+    height:25%;
 
+  }
+  .to-do-list-div {
+    height:73.5%;
+  }
+
+  .inputAddButton, .input {
+    height: 2rem;
+    width: 80%;
+    margin: 0.3rem 0.7rem;
+  }
   .heading-content-text {
     margin: 2rem 2rem 0rem 2rem;
     font-size: 1.4em;
