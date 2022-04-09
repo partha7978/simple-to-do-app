@@ -4,8 +4,7 @@ let closeBtn = document.querySelector(".closeBtn");
 
 let model2 = document.getElementById("myPopup2");
 let modelContent2 = model2.querySelector(".popup-content2");
-let closeBtn2 = document.querySelector(".close-btn2")
-
+let closeBtn2 = document.querySelector(".close-btn2");
 
 let generalPopup = document.getElementById("generalPopup");
 let generalPopupContent = generalPopup.querySelector(".popup-content-general");
@@ -13,10 +12,8 @@ let closeBtnGeneral = document.querySelector(".general-close-btn");
 let blankDiv = document.querySelector(".blank-div");
 let generalDiv = document.querySelector(".general-div");
 
-let btnDark= document.querySelector(".btn-dark");
-let btnLight= document.querySelector(".btn-light");
-
-
+let btnDark = document.querySelector(".btn-dark");
+let btnLight = document.querySelector(".btn-light");
 
 // When the user clicks the button, open the model
 
@@ -42,17 +39,14 @@ const forDarkMode = () => {
         generalPopupFunforDark();
       }, 600);
     }
-
   };
 };
-
 
 const forLightMode = () => {
   setTimeout(() => {
     model2.style.display = "block";
     modelContent2.classList.add("animate__animated", "animate__fadeInDown"); //!   adding fade in animation when it appears
   }, 2000);
-
 
   closeBtn2.addEventListener("click", () => {
     modelContent2.classList.add("animate__animated", "animate__fadeOutDown");
@@ -71,8 +65,7 @@ const forLightMode = () => {
       }, 600);
     }
   };
-}
-
+};
 
 const generalPopupFunforLight = () => {
   setTimeout(() => {
@@ -81,20 +74,26 @@ const generalPopupFunforLight = () => {
   }, 1500);
 
   closeBtnGeneral.addEventListener("click", () => {
-    generalPopupContent.classList.add("animate__animated", "animate__fadeOutDown");
+    generalPopupContent.classList.add(
+      "animate__animated",
+      "animate__fadeOutDown"
+    );
     setTimeout(() => {
       generalPopup.style.display = "none";
     }, 600);
   });
   window.onclick = function (e) {
     if (e.target == blankDiv || e.target == generalDiv) {
-      generalPopupContent.classList.add("animate__animated", "animate__fadeOutDown");
+      generalPopupContent.classList.add(
+        "animate__animated",
+        "animate__fadeOutDown"
+      );
       setTimeout(() => {
         generalPopup.style.display = "none";
       }, 600);
     }
   };
-}
+};
 
 const generalPopupFunforDark = () => {
   generalPopupContent.classList.add("popup-content-general-light");
@@ -106,23 +105,27 @@ const generalPopupFunforDark = () => {
   }, 1500);
 
   closeBtnGeneral.addEventListener("click", () => {
-    generalPopupContent.classList.add("animate__animated", "animate__fadeOutDown");
+    generalPopupContent.classList.add(
+      "animate__animated",
+      "animate__fadeOutDown"
+    );
     setTimeout(() => {
       generalPopup.style.display = "none";
     }, 600);
   });
 
-  //when the user clicks anywhere outside of the model, close it
   window.onclick = function (e) {
     if (e.target == blankDiv || e.target == generalDiv) {
-      generalPopupContent.classList.add("animate__animated", "animate__fadeOutDown");
+      generalPopupContent.classList.add(
+        "animate__animated",
+        "animate__fadeOutDown"
+      );
       setTimeout(() => {
         generalPopup.style.display = "none";
       }, 600);
     }
   };
-}
-
+};
 
 //! for system theme detection and set the theme according to that STARTS
 if (
@@ -134,17 +137,11 @@ if (
 
   console.log("dark mode detected"); // dark mode
   forDarkMode();
-}
-else
-{
+} else {
   console.log("light mode detected"); // light mode
   forLightMode();
 }
 //for system theme detection and set the theme according to that ENDS
-
-
-
-
 
 //! showing custom popup regarding tutorial of this app
 
@@ -154,4 +151,3 @@ btnDark.addEventListener("click", () => {
 btnLight.addEventListener("click", () => {
   generalPopupFunforDark();
 });
-
