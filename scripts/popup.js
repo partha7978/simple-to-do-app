@@ -10,7 +10,8 @@ let closeBtn2 = document.querySelector(".close-btn2")
 let generalPopup = document.getElementById("generalPopup");
 let generalPopupContent = generalPopup.querySelector(".popup-content-general");
 let closeBtnGeneral = document.querySelector(".general-close-btn");
-
+let blankDiv = document.querySelector(".blank-div");
+let generalDiv = document.querySelector(".general-div");
 
 let btnDark= document.querySelector(".btn-dark");
 let btnLight= document.querySelector(".btn-light");
@@ -82,8 +83,14 @@ const generalPopupFunforLight = () => {
       generalPopup.style.display = "none";
     }, 600);
   });
-
-
+  window.onclick = function (e) {
+    if (e.target == blankDiv || e.target == generalDiv) {
+      generalPopupContent.classList.add("animate__animated", "animate__fadeOutDown");
+      setTimeout(() => {
+        generalPopup.style.display = "none";
+      }, 600);
+    }
+  };
 }
 
 const generalPopupFunforDark = () => {
@@ -102,6 +109,15 @@ const generalPopupFunforDark = () => {
     }, 600);
   });
 
+  //when the user clicks anywhere outside of the model, close it
+  window.onclick = function (e) {
+    if (e.target == blankDiv || e.target == generalDiv) {
+      generalPopupContent.classList.add("animate__animated", "animate__fadeOutDown");
+      setTimeout(() => {
+        generalPopup.style.display = "none";
+      }, 600);
+    }
+  };
 }
 
 
