@@ -39,8 +39,10 @@ const forDarkMode = () => {
       modelContent.classList.add("animate__animated", "animate__fadeOutDown");
       setTimeout(() => {
         model.style.display = "none";
+        generalPopupFunforDark();
       }, 600);
     }
+
   };
 };
 
@@ -65,6 +67,7 @@ const forLightMode = () => {
       modelContent2.classList.add("animate__animated", "animate__fadeOutDown");
       setTimeout(() => {
         model2.style.display = "none";
+        generalPopupFunforLight();
       }, 600);
     }
   };
