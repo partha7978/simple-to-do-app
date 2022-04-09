@@ -76,6 +76,12 @@
     color: #000000;
   }
   
+  .general-close-btn {
+    color: #ffffff;
+    background-color: #000000;
+    border: none;
+    outline: none;
+  }
   
 
 
@@ -84,16 +90,30 @@
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 200px; /* Location of the box */
+  /* Location of the box */
   left: 0;
-  top: 0;
+  bottom: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+
+}
+.blank-div {
+  height:65%;
+  width: 100%;
+}
+.general-div {
+  height:35%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .popup-content-general{
+  height: 70%;
+
   background-color: #ffffff;
   color: rgb(0, 0, 0);
   margin: auto;
@@ -107,7 +127,7 @@
   align-items: center;
   border-radius: 25px;
   text-align: center;
-
+  margin-bottom: 1rem;
 }
 
 .popup-content-general p {
@@ -124,11 +144,47 @@
   /* ? FOR RESPONSIVE */
   @media only screen and (max-width: 1320px) {
     .popup-content, .popup-content2, .popup-content-general {
-      text-align: center
+      text-align: center;
+      width: 80%;
+    }
+    .blank-div {
+      height: 65%;
+    }
+    .general-div {
+      height: 35%;
     }
   }
+
   @media only screen and (max-width: 695px) {
-    .popup-content, .popup-content2, .popup-content-general {
-      width: 80%;
+    .general-close-btn {
+      margin: 0.5rem;
+    }
+    .blank-div {
+      height: 60%;
+    }
+    .general-div {
+      height: 40%;
+    }
+
+  }
+
+  @media only screen and (max-width: 530px) {
+    .blank-div {
+      height: 55%;
+    }
+    .general-div {
+      height: 45%;
+    }
+    .popup-content-general p {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media only screen and (max-width: 433px) {
+    .blank-div {
+      height: 50%;
+    }
+    .general-div {
+      height: 50%;
     }
   }

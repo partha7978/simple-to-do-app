@@ -66,8 +66,20 @@ const forLightMode = () => {
 
 
 const generalPopupFun = () => {
+  setTimeout(() => {
+    generalPopup.style.display = "block";
+    generalPopupContent.classList.add("animate__animated", "animate__fadeInUp"); //!   adding fade in animation when it appears
+  }, 1500);
 
+  closeBtnGeneral.addEventListener("click", () => {
+    generalPopupContent.classList.add("animate__animated", "animate__fadeOutDown");
+    setTimeout(() => {
+      generalPopup.style.display = "none";
+    }, 600);
+  });
 }
+
+
 //! for system theme detection and set the theme according to that STARTS
 if (
   window.matchMedia &&
@@ -96,9 +108,7 @@ let btnLight= document.querySelector(".btn-light");
 
 
 btnDark.addEventListener("click", () => {
-  setTimeout(() => {
-    alert("Please enter");
-  },1500);
+  generalPopupFun();
 });
 btnLight.addEventListener("click", () => {
   console.log("hello world");
