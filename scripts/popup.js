@@ -9,7 +9,12 @@ let closeBtn2 = document.querySelector(".close-btn2")
 
 let generalPopup = document.getElementById("generalPopup");
 let generalPopupContent = generalPopup.querySelector(".popup-content-general");
-let closeBtnGeneral = generalPopup.querySelector(".general-close-btn");
+let closeBtnGeneral = document.querySelector(".general-close-btn");
+
+
+let btnDark= document.querySelector(".btn-dark");
+let btnLight= document.querySelector(".btn-light");
+
 
 
 // When the user clicks the button, open the model
@@ -65,7 +70,7 @@ const forLightMode = () => {
 }
 
 
-const generalPopupFun = () => {
+const generalPopupFunforLight = () => {
   setTimeout(() => {
     generalPopup.style.display = "block";
     generalPopupContent.classList.add("animate__animated", "animate__fadeInUp"); //!   adding fade in animation when it appears
@@ -77,6 +82,26 @@ const generalPopupFun = () => {
       generalPopup.style.display = "none";
     }, 600);
   });
+
+
+}
+
+const generalPopupFunforDark = () => {
+  generalPopupContent.classList.add("popup-content-general-light");
+  closeBtnGeneral.classList.add("general-close-btn-dark");
+
+  setTimeout(() => {
+    generalPopup.style.display = "block";
+    generalPopupContent.classList.add("animate__animated", "animate__fadeInUp"); //!   adding fade in animation when it appears
+  }, 1500);
+
+  closeBtnGeneral.addEventListener("click", () => {
+    generalPopupContent.classList.add("animate__animated", "animate__fadeOutDown");
+    setTimeout(() => {
+      generalPopup.style.display = "none";
+    }, 600);
+  });
+
 }
 
 
@@ -102,14 +127,12 @@ else
 
 
 
-// showing custom popup regarding tutorial of this app
-let btnDark= document.querySelector(".btn-dark");
-let btnLight= document.querySelector(".btn-light");
-
+//! showing custom popup regarding tutorial of this app
 
 btnDark.addEventListener("click", () => {
-  generalPopupFun();
+  generalPopupFunforLight();
 });
 btnLight.addEventListener("click", () => {
-  console.log("hello world");
+  generalPopupFunforDark();
 });
+
