@@ -6,6 +6,12 @@ let model2 = document.getElementById("myPopup2");
 let modelContent2 = model2.querySelector(".popup-content2");
 let closeBtn2 = document.querySelector(".close-btn2")
 
+
+let generalPopup = document.getElementById("generalPopup");
+let generalPopupContent = generalPopup.querySelector(".popup-content-general");
+let closeBtnGeneral = generalPopup.querySelector(".general-close-btn");
+
+
 // When the user clicks the button, open the model
 
 const forDarkMode = () => {
@@ -58,6 +64,10 @@ const forLightMode = () => {
   };
 }
 
+
+const generalPopupFun = () => {
+
+}
 //! for system theme detection and set the theme according to that STARTS
 if (
   window.matchMedia &&
@@ -75,3 +85,21 @@ else
   forLightMode();
 }
 //for system theme detection and set the theme according to that ENDS
+
+
+
+
+
+// showing custom popup regarding tutorial of this app
+let btnDark= document.querySelector(".btn-dark");
+let btnLight= document.querySelector(".btn-light");
+
+
+btnDark.addEventListener("click", () => {
+  setTimeout(() => {
+    alert("Please enter");
+  },1500);
+});
+btnLight.addEventListener("click", () => {
+  console.log("hello world");
+});
