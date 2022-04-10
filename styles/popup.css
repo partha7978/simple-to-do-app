@@ -56,24 +56,32 @@
     padding: 0.6rem 1.5rem;
     margin: 2rem 1rem 1rem 1rem;
     /* opacity: 0; */
-    color: #ffffff;
     border: none;
     outline: none;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     transition: all 0.5s;
     cursor: pointer;
-    border: 1px solid #000000;
-    background-color: #4946ff;
+    color: #000000;
+    background-color: white;
+    border: 1px solid rgb(0, 0, 0);
     letter-spacing: 2px;
   }
   .close-btn2 {
-    background-color: rgb(13, 45, 114);
+    color: #ffffff;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
   }
   .close:hover,
   .close:focus {
-    background-color: #f0f4fb;
+    background-color: #ffffff;
     color: #000000;
+  }
+  .btn-light:hover,
+  .btn-light:focus {
+    background: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
   }
   
   .general-close-btn {
@@ -89,11 +97,18 @@
     border: 1px solid rgb(0, 0, 0);
     outline: none;
   }
+  
   .general-close-btn:hover,
   .general-close-btn:focus {
     background: transparent;
   }
+  .general-close-btn-dark:hover,
+  .general-close-btn-dark:focus {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+  }
   
+
 
 
 /*! generaal popup starts */
