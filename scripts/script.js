@@ -98,7 +98,13 @@ const addListAfterKeypress = (event) => {
         }
         else 
         {
-            alert("OOps! You forget to add time or content. Please add it  🤗");
+            if(document.querySelector(".btn-dark-color")) {
+                forNotAddingValuesDark();
+            }
+            else
+            {
+                  forNotAddingValuesLight();
+            }
         }
     }
 }
