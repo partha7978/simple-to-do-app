@@ -12,12 +12,22 @@ let closeBtnGeneral = document.querySelector(".general-close-btn");
 let blankDiv = document.querySelector(".blank-div");
 let generalDiv = document.querySelector(".general-div");
 
+
+let model3 = document.getElementById("myPopup3");
+let modelContent3 = model3.querySelector(".popup-content3");
+let closeBtn3 = document.querySelector(".close-btn3");
+
 let btnDark = document.querySelector(".btn-dark");
 let btnLight = document.querySelector(".btn-light");
+
+
+
+
 
 // When the user clicks the button, open the model
 
 const forDarkMode = () => {
+  console.log("forDarkMode added");
   setTimeout(() => {
     model.style.display = "block";
     modelContent.classList.add("animate__animated", "animate__fadeInDown"); //!   adding fade in animation when it appears
@@ -43,6 +53,7 @@ const forDarkMode = () => {
 };
 
 const forLightMode = () => {
+  console.log("forLightMode added");
   setTimeout(() => {
     model2.style.display = "block";
     modelContent2.classList.add("animate__animated", "animate__fadeInDown"); //!   adding fade in animation when it appears
@@ -68,6 +79,7 @@ const forLightMode = () => {
 };
 
 const generalPopupFunforLight = () => {
+  console.log("generalPopupFunforLight added");
   setTimeout(() => {
     generalPopup.style.display = "block";
     generalPopupContent.classList.add("animate__animated", "animate__fadeInUp"); //!   adding fade in animation when it appears
@@ -96,6 +108,8 @@ const generalPopupFunforLight = () => {
 };
 
 const generalPopupFunforDark = () => {
+
+  console.log("generalPopupFunforDark added");
   generalPopupContent.classList.add("popup-content-general-light");
   closeBtnGeneral.classList.add("general-close-btn-dark");
 
@@ -151,3 +165,54 @@ btnDark.addEventListener("click", () => {
 btnLight.addEventListener("click", () => {
   generalPopupFunforDark();
 });
+
+
+
+
+//! showing  popup when user try to input without adding values
+const forNotAddingValuesLight = () => {
+console.log("forNotAddingValues added");
+    model3.style.display = "block";
+    modelContent3.classList.add("animate__animated", "animate__zoomIn"); //!   adding fade in animation when it appears
+
+  closeBtn3.addEventListener("click", () => {
+    // modelContent3.classList.add("animate__animated", "animate__zoomOut");
+
+      model3.style.display = "none";
+
+  });
+  // When the user clicks anywhere outside of the model, close it
+  window.onclick = function (e) {
+    if (e.target == model3) {
+      console.log("model3 clicked");
+      // modelContent3.classList.add("animate__animated", "animate__zoomOut");
+        model3.style.display = "none";
+    }
+  };
+};
+
+
+
+const forNotAddingValuesDark = () => {
+  console.log("forNotAddingValues added");
+  modelContent3.classList.add("popup-content3-dark");
+  closeBtn3.classList.add("close-btn3-dark");
+      model3.style.display = "block";
+      modelContent3.classList.add("animate__animated", "animate__zoomIn"); //!   adding fade in animation when it appears
+  
+    closeBtn3.addEventListener("click", () => {
+      // modelContent3.classList.add("animate__animated", "animate__zoomOut");
+  
+        model3.style.display = "none";
+  
+    });
+    // When the user clicks anywhere outside of the model, close it
+    window.onclick = function (e) {
+      if (e.target == model3) {
+        console.log("model3 clicked");
+        // modelContent3.classList.add("animate__animated", "animate__zoomOut");
+          model3.style.display = "none";
+      }
+    };
+  };
+  

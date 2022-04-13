@@ -1,6 +1,6 @@
 /* !testing */
 /* The Modal (background) */
-.popup1, .popup2 {
+.popup1, .popup2, .popup3 {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -30,7 +30,7 @@
     border-radius: 25px;
     text-align: center;
   }
- .popup-content2  {
+ .popup-content2, .popup-content3  {
     background-color: #ffffff;
     color: black;
     margin: auto;
@@ -45,7 +45,7 @@
     border-radius: 25px;
     text-align: center;
   }
-  .popup-content p, .popup-content p {
+  .popup-content p, .popup-content2 p, .popup-content3 p {
     margin-top: 1rem;
     font-size: 1.2rem;
     letter-spacing: 3px;
@@ -109,6 +109,23 @@
   }
   
 
+  /* for dark mode popup content for not adding values */
+  .popup-content3-dark {
+    background-color: #152028;
+    color: white;
+  }
+.close-btn3-dark {
+  color: #000000;
+  background-color: white;
+  border: 1px solid rgb(0, 0, 0);
+  outline: none;
+}
+.close-btn3-dark:hover,
+.close-btn3-dark:focus {
+  color: #ffffff;
+  background-color: #000000;
+  border: 1px solid rgb(255, 255, 255);
+}
 
 
 /*! generaal popup starts */
