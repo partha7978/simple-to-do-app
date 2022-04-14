@@ -190,7 +190,7 @@
 
   /* ? FOR RESPONSIVE */
   @media only screen and (max-width: 1320px) {
-    .popup-content, .popup-content2, .popup-content-general {
+    .popup-content, .popup-content2, .popup-content-general , .popup-content3{
       text-align: center;
       width: 80%;
     }
@@ -236,5 +236,9 @@
     }
     .general-div {
       height: 50%;
+    }
+    .popup-content, .popup-content2, .popup-content-general , .popup-content3{
+      text-align: center;
+      width: 90%;
     }
   }
