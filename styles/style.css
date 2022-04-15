@@ -210,20 +210,22 @@ ion-icon {
   width: 5rem;
   border-radius: 7px;
   color: rgb(0, 0, 0);
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   font-weight: bold;
   display: block;
   font-weight: 540;
   cursor: pointer;
   background: #e0e6e9;
   box-shadow: 5px 5px 10px #acb1b3, -5px -5px 10px #ffffff;
-
+  border: 1px solid rgb(0, 0, 0);
   outline: none;
-  border: none;
+  text-transform: uppercase;
+  /* border: none; */
   transition: all 1.5s;
 }
 .btn-dark-color {
   color: rgb(233, 233, 233);
+  border: 1px solid #fff;
   background: #152028;
   box-shadow: 5px 5px 10px #0c1216, -5px -5px 10px #1e2e3a;
 }
