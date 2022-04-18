@@ -1,4 +1,4 @@
-alet addButton = document.querySelector(".inputAddButton");
+let addButton = document.querySelector(".inputAddButton");
 let ul = document.querySelector("ul");
 let textInput = document.querySelector(".input");
 let timeAdd = document.querySelector(".inputTime");
