@@ -183,6 +183,12 @@
   letter-spacing: 3px;
 }
 
+p > b {
+  background-image:  linear-gradient(to right, rgb(56, 83, 233), rgb(255, 67, 155));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /*! generaal popup ends */
 
 
