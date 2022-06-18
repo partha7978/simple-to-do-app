@@ -4,7 +4,7 @@ let textInput = document.querySelector(".input");
 let timeAdd = document.querySelector(".inputTime");
 
 const main = () => {
-     // for add
+     //! for add
      let li = document.createElement("li");
      li.classList.add("li-hover-shadow", "list");
      let rightDiv = document.createElement("div");
@@ -69,6 +69,11 @@ const main = () => {
      };
      //! for toggle
      rightIcon.addEventListener("click",  () => {
+        //? adding ringtone starts
+        let notificationSound = new Audio("../sounds/iphone_notification_so.mp3");
+        notificationSound.play();
+        //? adding ringtone ends
+
          middleText.classList.toggle("toggle");
          rightIcon.classList.toggle("fa-redo-alt");
          rightIcon.classList.toggle("fa-check");
