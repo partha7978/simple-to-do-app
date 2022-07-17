@@ -61,8 +61,8 @@ html {
 }
 
 .header-logo {
-  height: 1.7rem;
-  width: 6rem;
+  height: 2rem;
+  width: 5rem;
   margin: 0.5rem 0.5rem 0.5rem 1rem;
   cursor: pointer;
   user-select: none;

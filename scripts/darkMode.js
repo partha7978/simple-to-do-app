@@ -28,6 +28,16 @@ const darkModeFunction = () => {
   inputTime.classList.toggle("input-dark-mode");
   input.classList.toggle("input-dark-mode");
   inputBtn.classList.toggle("btn-dark-color");
+
+  // !for changing of logo with change of theme 
+  if(document.querySelector(".dark-mode-color"))
+  {
+    document.querySelector(".header-logo").src ="../images/logoForDarkMode.png";
+  }
+  else
+  {
+    document.querySelector(".header-logo").src ="../images/logoForLightMode.png";
+  }
 };
 
 const listDarkMode = () => {
