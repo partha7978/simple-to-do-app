@@ -25,6 +25,7 @@ const main = () => {
  
      serialNo.classList.add("list-number");
      time.classList.add("time-list");
+     time.setAttribute("id", "inputTime");
  
      middleText.classList.add("main-list-content");
  
@@ -46,6 +47,7 @@ const main = () => {
      ul.appendChild(li);
  
      middleText.appendChild(document.createTextNode(textInput.value));
+     middleText.setAttribute("id", "inputText");
      textInput.value = "";
 
      //!for serial number 
@@ -80,9 +82,34 @@ const main = () => {
      })
 }
 
+// !adding values to local storage
+let saveData = () => {
+    let inputText = document.getElementById("inputText").innerText;
+    let inputTime = document.getElementById("inputTime").innerText;
+    console.log(inputText);
+    console.log(inputTime);
+    if (inputText.length == 0 || inputTime.length == 0) {
+        if(document.querySelector(".btn-dark-color")) {
+            forNotAddingValuesDark();
+        }
+        else
+        {
+            forNotAddingValuesLight();
+        }
+    } else {
+        let dataArray = [false, inputTime];
+        localStorage.setItem("inputData", JSON.stringify(dataArray));
+        // displayData();
+        console.log(localStorage.getItem("inputData"));
+    }
+}
+
+
+
 const addlistAfterClick = () => {
     if (textInput.value.length > 0 && timeAdd.value > "0") {
         main();
+        saveData();
     }
     else {
   
