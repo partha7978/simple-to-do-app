@@ -2,7 +2,7 @@ let addButton = document.querySelector(".inputAddButton");
 let ul = document.querySelector("ul");
 let textInput = document.querySelector(".input");
 let timeAdd = document.querySelector(".inputTime");
-
+let saveArr= [];
 const main = () => {
      //! for add
      let li = document.createElement("li");
@@ -47,6 +47,7 @@ const main = () => {
      ul.appendChild(li);
  
      middleText.appendChild(document.createTextNode(textInput.value));
+     saveData();
      middleText.setAttribute("id", "inputText");
      textInput.value = "";
 
@@ -80,36 +81,22 @@ const main = () => {
          rightIcon.classList.toggle("fa-redo-alt");
          rightIcon.classList.toggle("fa-check");
      })
+
 }
 
 // !adding values to local storage
-let saveData = () => {
-    let inputText = document.getElementById("inputText").innerText;
-    let inputTime = document.getElementById("inputTime").innerText;
-    console.log(inputText);
-    console.log(inputTime);
-    if (inputText.length == 0 || inputTime.length == 0) {
-        if(document.querySelector(".btn-dark-color")) {
-            forNotAddingValuesDark();
-        }
-        else
-        {
-            forNotAddingValuesLight();
-        }
-    } else {
-        let dataArray = [false, inputTime];
-        localStorage.setItem("inputData", JSON.stringify(dataArray));
-        // displayData();
-        console.log(localStorage.getItem("inputData"));
-    }
+let saveData = () => {  
+    saveArr.push([timeAdd.value, textInput.value]);
+    console.log(saveArr);
+    localStorage.setItem("inputData", JSON.stringify(saveArr));
+    displayData();
 }
-
 
 
 const addlistAfterClick = () => {
     if (textInput.value.length > 0 && timeAdd.value > "0") {
         main();
-        saveData();
+        // saveData();
     }
     else {
   
