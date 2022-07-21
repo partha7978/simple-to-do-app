@@ -32,11 +32,11 @@ const darkModeFunction = () => {
   // !for changing of logo with change of theme 
   if(document.querySelector(".dark-mode-color"))
   {
-    document.querySelector(".header-logo").src ="../images/logoForDarkMode.png";
+    document.querySelector(".header-logo").src ="../images/logoForDarkMode.webp";
   }
   else
   {
-    document.querySelector(".header-logo").src ="../images/logoForLightMode.png";
+    document.querySelector(".header-logo").src ="../images/logoForLightMode.webp";
   }
 };
 

@@ -87,11 +87,17 @@ const main = () => {
 // !adding values to local storage
 let saveData = () => {  
     saveArr.push([timeAdd.value, textInput.value]);
-    console.log(saveArr);
     localStorage.setItem("inputData", JSON.stringify(saveArr));
     displayData();
 }
-
+const displayData = () => {
+    // document.getElementById("dataul").innerHTML = "";
+    let keys = Object.keys(localStorage);
+    console.log(keys);
+    for(let key of keys) {
+        console.log(localStorage.getItem(key[5]));
+    }
+}
 
 const addlistAfterClick = () => {
     if (textInput.value.length > 0 && timeAdd.value > "0") {
