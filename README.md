@@ -5,3 +5,9 @@ Here, user can add a task, delete a task and mark a task as completed.
 
 ###  You can view the webpage [here](https://basic-to-do-app.netlify.app/)
 
+## Tech Stack 
+- Html
+- Css
+- JavaScript
+- Animate.css
+- jQuery
