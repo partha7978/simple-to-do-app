@@ -8,7 +8,7 @@ Here, user can add a task, delete a task and mark a task as completed.
 ---
 ## Screenshot
 
-## Light Mode
+### Light Mode
 <img src="./images/readme_assets/lightMode.jpg">
 
 ### Popup in light mode
