@@ -8,11 +8,21 @@ Here, user can add a task, delete a task and mark a task as completed.
 ---
 ## Screenshot
 
+## Light Mode
+<img src="./images/readme_assets/lightMode.jpg">
+
+### Popup in light mode
+<img src ="./images/readme_assets/popupInLightmode.jpg">
+
+### Light mode in small screen
+<img src ="./images/readme_assets/lightModeSmallScreen.jpg">
+
+
 ### Dark Mode
 <img src="./images/readme_assets/darkMode.jpg">
 
-### Popup in darkmode
-<img src ="./images/readme_assets/popup in darkmode.jpg">
+### Popup in dark mode
+<img src ="./images/readme_assets/popupInDarkkmode.jpg">
 
 ### Dark mode in small screen
 <img src ="./images/readme_assets/darkModeSmallScreen.jpg">
