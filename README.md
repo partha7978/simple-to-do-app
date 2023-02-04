@@ -36,4 +36,11 @@ Here, user can add a task, delete a task and mark a task as completed.
 - Animate.css
 - jQuery
 
+---
 
+
+## Contributing
+Contributions are welcome. Please open an issue or a pull request on [GitHub](https://github.com/partha7978/simple-to-do-app)
+
+
+Copyright (c) 2022 <a href="https://parthasarathimuduli.netlify.app/" target="_self">Partha Sarathi Muduli</a>
